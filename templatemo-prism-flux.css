@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+
+TemplateMo 600 Prism Flux
+
+https://templatemo.com/tm-600-prism-flux
+
+*/
+:root {
+	--primary-black: #0a0a0a;
+	--carbon-dark: #121212;
+	--carbon-medium: #1a1a1a;
+	--carbon-light: #2a2a2a;
+	--metal-dark: #3a3a3a;
+	--metal-light: #4a4a4a;
+	--accent-red: #ff3333;
+	--accent-blue: #00a8ff;
+	--accent-green: #00ff88;
+	--accent-purple: #9945ff;
+	--accent-cyan: #00ffff;
+	--text-primary: #ffffff;
+	--text-secondary: #b0b0b0;
+	--text-dim: #808080;
+}
+
+/* Stats Section with Content */
+
+.stats-grid {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 40px;
+}
+
+.stat-card {
+	background: linear-gradient(135deg,
+			rgba(42, 42, 42, 0.5),
+			rgba(26, 26, 26, 0.8));
+	border: 1px solid var(--metal-dark);
+	border-radius: 15px;
+	padding: 40px 30px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.stat-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,
+			transparent,
+			var(--accent-purple),
+			transparent);
+	animation: none;
+}
+
+.stat-card:hover::before {
+	animation: slideRight 0.5s ease forwards;
+}
+
+@keyframes slideRight {
+	0% {
+		left: -100%;
+	}
+
+	100% {
+		left: 100%;
+	}
+}
+
+.stat-card:hover {
+	transform: translateY(-5px);
+	border-color: var(--accent-purple);
+	box-shadow: 0 15px 35px rgba(153, 69, 255, 0.2);
+}
+
+.stat-icon {
+	width: 80px;
+	height: 80px;
+	background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 20px;
+	font-size: 36px;
+	color: var(--text-primary);
+	box-shadow: 0 10px 25px rgba(153, 69, 255, 0.3);
+	background: cornflowerblue;
+}
+
+.stat-number {
+	font-size: 48px;
+	font-weight: 900;
+	color: var(--text-primary);
+	margin-bottom: 10px;
+	font-family: 'Orbitron', monospace;
+}
+
+.stat-label {
+	font-size: 14px;
+	color: var(--text-secondary);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+}
+
+.stat-description {
+	font-size: 13px;
+	color: var(--text-dim);
+	line-height: 1.5;
+	padding: 0 10px;
+	direction: rtl;
+}
+
