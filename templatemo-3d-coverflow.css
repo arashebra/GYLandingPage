@@ -205,8 +205,8 @@ https://templatemo.com/tm-595-3d-coverflow
 
         .coverflow-item {
             position: absolute;
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 430px;
             transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             cursor: pointer;
             user-select: none;
@@ -220,7 +220,11 @@ https://templatemo.com/tm-595-3d-coverflow
             position: relative;
             overflow: hidden;
             transform-style: preserve-3d;
-            background: #333;
+            /* background: #333; */
+            background: linear-gradient(to bottom, 
+                rgba(66, 146, 236, 0) 0%, 
+                rgba(108, 27, 238, 0.8) 100%, 
+                rgb(126, 140, 223) 50%);;
         }
 
         .coverflow-item .cover img {
@@ -228,6 +232,8 @@ https://templatemo.com/tm-595-3d-coverflow
             height: 100%;
             object-fit: cover;
             border-radius: 10px;
+            display: block;
+            margin: auto;
         }
 
         /* Reflection */
@@ -318,7 +324,7 @@ https://templatemo.com/tm-595-3d-coverflow
         }
 
         /* Info display */
-        .info {
+        /* .info {
             position: absolute;
             top: 120px;
             left: 50%;
@@ -333,11 +339,40 @@ https://templatemo.com/tm-595-3d-coverflow
             margin-bottom: 10px;
             opacity: 0;
             animation: fadeIn 0.6s forwards;
+            margin-top: -40px;
         }
 
         .info p {
             font-size: 16px;
             opacity: 0.7;
+        } */
+
+        .info {
+            position: absolute;
+            top: 120px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            z-index: 200;
+            display: flex; /* Add this line to use flexbox */
+            align-items: center; /* Align items vertically centered */
+            justify-content: center; /* Center items horizontally */
+            direction: rtl;
+        }
+
+        .info h2 {
+            font-size: 32px;
+            margin: 0 10px 10px 0; /* Add margin for spacing */
+            opacity: 0;
+            animation: fadeIn 0.6s forwards;
+            margin-top: -40px;
+        }
+
+        .info p {
+            font-size: 16px;
+            opacity: 0.7;
+            margin: 0; /* Remove margin to align properly */
         }
 
         @keyframes fadeIn {

@@ -44,32 +44,32 @@ https://templatemo.com/tm-595-3d-coverflow
         // Image data with titles and descriptions
         const imageData = [
             {
-                title: "Mountain Landscape",
-                description: "Majestic peaks covered in snow during golden hour"
+                title: "نمونه نتایج جستجوی تعرفه",
+                description: ""
             },
             {
-                title: "Forest Path",
-                description: "A winding trail through ancient woodland"
+                title: "شرح تعرفه و ارزش TSC",
+                description: ""
             },
             {
-                title: "Lake Reflection",
-                description: "Serene waters mirroring the surrounding landscape"
+                title: "قانون امور گمرکی و آیین‌نامه اجرایی آن",
+                description: ""
             },
             {
-                title: "Ocean Sunset",
-                description: "Golden hour over endless ocean waves"
+                title: "گمرکیار",
+                description: ""
             },
             {
-                title: "Desert Dunes",
-                description: "Rolling sand dunes under vast blue skies"
+                title: "محاسبات گمرکی",
+                description: ""
             },
             {
-                title: "Starry Night",
-                description: "Countless stars illuminating the dark sky"
+                title: "کتاب HScode",
+                description: ""
             },
             {
-                title: "Waterfall",
-                description: "Cascading water through lush green forest"
+                title: "جستجوی تعرفه و حقوق ورودی",
+                description: ""
             }
         ];
 
