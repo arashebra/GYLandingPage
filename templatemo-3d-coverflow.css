@@ -598,6 +598,7 @@ https://templatemo.com/tm-595-3d-coverflow
         .feature-list {
             list-style: none;
             margin-bottom: 40px;
+            
         }
 
         .feature-list li {
@@ -607,6 +608,7 @@ https://templatemo.com/tm-595-3d-coverflow
             margin-bottom: 20px;
             font-size: 16px;
             color: rgba(255, 255, 255, 0.9);
+            text-align: right;
         }
 
         .feature-list li::before {
