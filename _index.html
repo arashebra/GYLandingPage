@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>گمرکیار - اپلیکیشن ارائه‌دهنده خدمات گمرکی</title>
+    <link href="templatemo-3d-coverflow.css" rel="stylesheet" />
+    <link href="templatemo-prism-flux.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <!--
+
+TemplateMo 595 3d coverflow
+
+https://templatemo.com/tm-595-3d-coverflow
+
+-->
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <a href="#home" class="logo-container">
+        <div class="logo">
+          <img src="images/gomrokyar-logo.png" alt="گمرکیار" />
+        </div>
+        <div class="logo-text">گمرکیار</div>
+      </a>
+
+      <nav class="main-menu" id="mainMenu">
+        <a href="#home" class="menu-item active">خانه</a>
+        <a href="#about" class="menu-item">امکانات گمرکیار</a>
+        <a href="#contact" class="menu-item">تماس با ما</a>
+        <a href="#about" class="menu-item">دانلود گمرکیار</a>
+
+        <!-- <a href="#" class="cta-button">
+          دانلود
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 19l-7-7h14z"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+            />
+          </svg>
+        </a> -->
+      </nav>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="coverflow-wrapper">
+        <div class="info">
+          <h2 id="current-title">صفحه اول گمرکیار</h2>
+          <p id="current-description">امکانات متنوع گمرکیار</p>
+        </div>
+
+        <div class="coverflow-container" tabindex="0">
+          <div class="coverflow" id="coverflow">
+            <div class="coverflow-item" data-index="0">
+              <div class="cover image-loading">
+                <img
+                  src="images/نتایج-جستجوی-تعرفه.png"
+                  alt="نتایج جستجوی تعرفه"
+                  loading="lazy"
+                />
+              </div>
+              <div class="reflection"></div>
+            </div>
+
+            <div class="coverflow-item" data-index="1">
+              <div class="cover image-loading">
+                <img
+                  src="images/شرح-تعرفه-و-ارزش-TSC.png"
+                  alt="شرح تعرفه و ارزش TSC"
+                  loading="lazy"
+                />
+              </div>
+              <div class="reflection"></div>
+            </div>
+
+            <div class="coverflow-item" data-index="2">
+              <div class="cover image-loading">
+                <img
+                  src="images/قانون-امور-گمرکی-آیین-نامه-اجرایی.png"
+                  alt="Lake Reflection"
+                  loading="lazy"
+                />
+              </div>
+              <div class="reflection"></div>
+            </div>
+
+            <div class="coverflow-item" data-index="3">
+              <div class="cover image-loading">
+                <img src="images/گمرکیار.png" alt="گمرکیار" loading="lazy" />
+              </div>
+              <div class="reflection"></div>
+            </div>
+
+            <div class="coverflow-item" data-index="4">
+              <div class="cover image-loading">
+                <img
+                  src="images/محاسبات-گمرکی.png"
+                  alt="محاسبات گمرکی"
+                  loading="lazy"
+                />
+              </div>
+              <div class="reflection"></div>
+            </div>
+
+            <div class="coverflow-item" data-index="5">
+              <div class="cover image-loading">
+                <img
+                  src="images/کتاب-HScode.png"
+                  alt="Starry Night"
+                  loading="lazy"
+                />
+              </div>
+              <div class="reflection"></div>
+            </div>
+
+            <div class="coverflow-item" data-index="6">
+              <div class="cover image-loading">
+                <img
+                  src="images/جستجوی-تعرفه-حقوق-ورودی.png"
+                  alt="Waterfall"
+                  loading="lazy"
+                />
+              </div>
+              <div class="reflection"></div>
+            </div>
+          </div>
+
+          <button class="nav-button prev" onclick="navigate(-1)">‹</button>
+          <button class="nav-button next" onclick="navigate(1)">›</button>
+
+          <div class="dots-container" id="dots"></div>
+
+          <!-- Play/Pause Button -->
+          <button
+            class="play-pause-button"
+            id="playPauseBtn"
+            onclick="toggleAutoplay()"
+          >
+            <span class="play-icon">▶</span>
+            <span class="pause-icon" style="display: none">❚❚</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="about-content">
+        <div class="about-header">
+          <h2>اپلیکیشن گمرکیار</h2>
+          <p>
+            اپلیکیشن گمرکیار ارائه دهنده خدمات گمرکی. برای دانلود آخرین نسخه روی
+            دکمه زیر کلیک کنید.
+            <span style="font-size: medium">
+              (درصورتیکه قبلا پکیج پولی تهیه کرده‌اید، همچنان پکیج برای شما در
+              نسخه جدید فعال خواهد بود.)
+            </span>
+          </p>
+          <a
+            href="https://github.com/arashebra/GYLandingPage/raw/main/apk/GY30.0.0.apk"
+            class="cta-button"
+            style="width: 280px; margin: 10px; direction: rtl"
+          >
+            دانلود نسخه 30.0.0 اندرویدی
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 19l-7-7h14z"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+              />
+            </svg>
+          </a>
+          <a
+            href="#contact"
+            class="cta-button"
+            style="width: 280px; margin: 10px; direction: rtl"
+          >
+            دانلود نسخه 30.0.0 IOS
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 19l-7-7h14z"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="about-main">
+          <div class="about-visual">
+            <div class="showcase-display">
+              <div class="showcase-main">
+                <div class="corner-decoration top-left"></div>
+                <div class="corner-decoration bottom-right"></div>
+
+                <div class="showcase-logo">
+                  <img src="images/GomrokYar-logo2.png" />
+                </div>
+
+                <h3 class="showcase-title">گمرکیار</h3>
+                <p class="showcase-subtitle" style="direction: rtl">
+                  با گمرکیار دیگه خیالت از بابت امور گمرکی راحته.
+                </p>
+
+                <div class="showcase-badges" style="width: 300px">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="badge"
+                    >کارایی بالا</a
+                  >
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="badge"
+                    >دقت بالا</a
+                  >
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="badge"
+                    >هوش مصنوعی کارآمد</a
+                  >
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="badge"
+                    >هزینه پایین</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-info">
+            <h3>امکانات اپلیکیشن گمرکیار</h3>
+            <p style="text-align: right">
+              اپلیکیشن گمرکیار بهترین نرم‌افزار در زمینه خدمات گمرکی است که در
+              ادامه با برخی از آنها آشنا خواهید شد:
+            </p>
+
+            <ul class="feature-list">
+              <li>تعرفه (حقوق گمرکی و سودبازرگانی) سال 1404 (جدید)</li>
+              <li>جستجو در ارزش کالاها (TSC)</li>
+              <li>محاسبات گمرکی (محاسبه اظهارنامه) به صورت رایگان</li>
+              <li>تبلیغات رایگان</li>
+              <li>قانون گمرکی و آیین نامه اجرایی آن</li>
+              <li>نرخ ارز (گمرکی)</li>
+            </ul>
+
+            <a
+              href="https://github.com/arashebra/GYLandingPage/raw/main/apk/GY30.0.0.apk"
+              class="cta-button"
+              style="width: 280px; margin: 10px"
+            >
+              دانلود نسخه 30.0.0 اندرویدی
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 19l-7-7h14z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                />
+              </svg>
+            </a>
+            <a
+              href="#contact"
+              class="cta-button"
+              style="width: 280px; margin: 10px"
+            >
+              دانلود نسخه 30.0.0 IOS
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 19l-7-7h14z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="stats-section">
+          <div class="stat-card stat-card1">
+            <div class="stat-icon">🚀</div>
+            <div class="stat-number stat-number1" data-target="15000">
+              10000
+            </div>
+            <div class="stat-label">تعداد کاربران</div>
+            <p class="stat-description">
+              سال‌هاست که گمرکیار همراه تجار، بازرگانان، ترخیص‌کاران و ... بوده
+              و در این مدت توانسته اعتماد بیش از 15 هزار کاربر را جلب کند.
+            </p>
+          </div>
+
+          <div class="stat-card stat-card2">
+            <div class="stat-icon">⚡</div>
+            <div class="stat-number stat-number2" data-target="100">0</div>
+            <div class="stat-label">دقت گمرکیار %</div>
+            <p class="stat-description">
+              توسعه گمرکیار همواره بر منبای اصل افزایش دقت و کارایی گمرکیار برای
+              جلب رضایت مشتری بوده است.
+            </p>
+          </div>
+
+          <div class="stat-card stat-card3">
+            <div class="stat-icon">🏆</div>
+            <div class="stat-number stat-number3" data-target="4.2">0</div>
+            <div class="stat-label">امتیاز کاربران</div>
+            <p class="stat-description">
+              گمرکیار ضمن عرضه در سایت رسمی خود در سکوی بازار نیز عرضه شده و
+              دارای امتیاز 4.2 از جانب کاربران است.
+            </p>
+          </div>
+
+          <div class="stat-card stat-card4">
+            <div class="stat-icon">🦾</div>
+            <div class="stat-number stat-number4" data-target="100">0</div>
+            <div class="stat-label">هوش مصنوعی</div>
+            <p class="stat-description">
+              گمرکیار از هوش مصنوعی برای بهبود جستجوها استفاده می‌کند.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="direction: rtl">
+      <div class="contact-content">
+        <div class="contact-header">
+          <h2>تماس با ما</h2>
+          <p>می‌توانید از طرق زیر با ما در تماس باشید.</p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info-section">
+            <h3>تماس با ما</h3>
+            <p>
+              درصورتیکه سوالی در مورد اپلیکیشن گمرکیار دارید، حتما با ما تماس
+              بگیرید.
+            </p>
+
+            <div class="contact-details">
+              <!-- <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>hello@3dcoverflow.com</p>
+                </div>
+              </div> -->
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>تلفن</h4>
+                  <div style="float: right">
+                    <p style="direction: ltr">0914 528 6394</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>آدرس</h4>
+                  <p>آذربایجان غربی، منطقه آزاد ماکو</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>ساعات کاری</h4>
+                  <p>تمام ایام هفته از ساعت 8 صبح تا 12 شب</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <h4>ما را در شبکه‌های اجتماعی دنبال کنید</h4>
+              <div class="social-buttons">
+                <!-- <a href="#" class="social-btn" title="Facebook">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                </a> -->
+                <!-- <a href="#" class="social-btn" title="Twitter">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                    />
+                  </svg>
+                </a> -->
+                <!-- <a href="#" class="social-btn" title="LinkedIn">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a> -->
+                <a
+                  href="https://www.instagram.com/gomrok_yar"
+                  class="social-btn"
+                  title="Instagram"
+                  target="_blank"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-section">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+              <div class="form-group">
+                <label for="name">نام و نام‌خانوادگی</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">شماره تماس</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">موضوع</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">پیام</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">ارسال پیام</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content" style="direction: rtl">
+        <div class="footer-copyright" style="direction: rtl">
+          © 2025 گمرکیار. تمامی حقوق برای گمرکیار محفوظ است. | توسعه داده شده
+          توسط
+          <a
+            href="https://www.linkedin.com/in/arash-ebrahimnezhad-6229bb100/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >آرش ابراهیم‌نژاد</a
+          >
+        </div>
+        <div class="footer-links"></div>
+      </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top" id="scrollToTop">
+      <span>↑</span>
+    </div>
+
+    <script src="templatemo-3d-coverflow-scripts.js"></script>
+    <script src="templatemo-prism-scripts.js"></script>
+  </body>
+</html>
