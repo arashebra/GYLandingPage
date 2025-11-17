@@ -121,3 +121,24 @@ https://templatemo.com/tm-600-prism-flux
 	direction: rtl;
 }
 
+.aboutGY, 
+.FAQ {
+	background: linear-gradient(135deg,
+			rgba(42, 42, 42, 0.5),
+			rgba(26, 26, 26, 0.8));
+	border: 1px solid var(--metal-dark);
+	border-radius: 15px;
+	padding: 40px 30px;
+	margin: 50px 0 0px 0;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	direction: rtl;
+}
+
+.aboutGY:hover, 
+.FAQ:hover {
+	transform: translateY(-5px);
+	border-color: var(--accent-purple);
+	box-shadow: 0 15px 35px rgba(153, 69, 255, 0.2);
+}

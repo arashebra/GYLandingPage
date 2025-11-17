@@ -1,20 +1,155 @@
 <!DOCTYPE html>
 <html lang="fa">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>گمرکیار - اپلیکیشن ارائه‌دهنده خدمات گمرکی</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
     <link href="templatemo-3d-coverflow.css" rel="stylesheet" />
     <link href="templatemo-prism-flux.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-    <!--
 
-TemplateMo 595 3d coverflow
+    <title>گمرکیار | دانلود گمرکیار — همراه امور گمرکی و ترخیص کالا</title>
+    <meta
+      name="description"
+      content="گمرکیار — اپلیکیشن و ابزار جامع برای امور گمرکی، استعلام، محاسبات و راهنمای ترخیص. دانلود گمرکیار برای اندروید و آموزش کامل استفاده."
+    />
+    <meta
+      name="keywords"
+      content="گمرکیار, گمرک یار, دانلود گمرکیار, نرم‌افزار گمرکی, ترخیص کالا, امور گمرکی"
+    />
+    <link rel="canonical" href="https://gomrokyar.app/" />
+    <meta name="theme-color" content="#0b5ed7" />
 
-https://templatemo.com/tm-595-3d-coverflow
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="گمرکیار | دانلود گمرکیار — همراه امور گمرکی و ترخیص کالا"
+    />
+    <meta
+      property="og:description"
+      content="گمرکیار — اپلیکیشن و ابزار جامع برای امور گمرکی، استعلام، محاسبات و راهنمای ترخیص. دانلود گمرکیار برای اندروید و آموزش کامل استفاده."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gomrokyar.app/" />
+    <meta property="og:site_name" content="گمرکیار" />
 
--->
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Styles (simple, minified inline- CSS برای سرعت) -->
+    <!-- <style>
+      :root {
+        font-family: Vazirmatn, "Segoe UI", Tahoma, sans-serif;
+        color: #222;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background: #f7f9fc;
+      }
+      header {
+        background: #0b5ed7;
+        color: #fff;
+        padding: 36px 20px;
+        text-align: center;
+      }
+      .container {
+        max-width: 980px;
+        margin: 24px auto;
+        padding: 0 16px;
+      }
+      h1 {
+        font-size: 28px;
+        margin: 0 0 12px;
+      }
+      h2 {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      .hero {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .hero .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+        width: 360px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 18px;
+        border-radius: 8px;
+        text-decoration: none;
+        background: #0b5ed7;
+        color: #fff;
+      }
+      footer {
+        padding: 24px;
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin-top: 16px;
+      }
+      .faq {
+        margin-top: 18px;
+      }
+      nav a {
+        color: #fff;
+        margin: 0 8px;
+        text-decoration: none;
+      }
+      .badge {
+        display: inline-block;
+        padding: 6px 10px;
+        background: #eef6ff;
+        border-radius: 6px;
+        font-size: 13px;
+        color: #0b5ed7;
+      }
+    </style> -->
+
+    <!-- JSON-LD (Structured Data for SoftwareApplication + Website) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "گمرکیار",
+            "url": "https://gomrokyar.app/",
+            "operatingSystem": "Android",
+            "applicationCategory": "BusinessApplication",
+            "downloadUrl": "https://gomrokyar.app/download.html",
+            "description": "اپلیکیشن گمرکیار برای کمک به امور گمرکی، محاسبات تعرفه، و راهنمای ترخیص کالا.",
+            "author": { "@type": "Organization", "name": "گمرکیار" }
+          },
+          {
+            "@type": "WebSite",
+            "url": "https://gomrokyar.app/",
+            "name": "گمرکیار",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://gomrokyar.app/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
+
   <body>
     <!-- Header -->
     <header class="header" id="header">
@@ -30,18 +165,8 @@ https://templatemo.com/tm-595-3d-coverflow
         <a href="#about" class="menu-item">امکانات گمرکیار</a>
         <a href="#contact" class="menu-item">تماس با ما</a>
         <a href="#about" class="menu-item">دانلود گمرکیار</a>
-
-        <!-- <a href="#" class="cta-button">
-          دانلود
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 19l-7-7h14z"
-              stroke="currentColor"
-              stroke-width="2"
-              fill="none"
-            />
-          </svg>
-        </a> -->
+        <a href="gomrok-yar.html" class="menu-item">صفحه گمرک یار</a>
+        <a href="download.html" class="menu-item">صفحه دانلود</a>
       </nav>
 
       <div class="menu-toggle" id="menuToggle">
@@ -342,6 +467,52 @@ https://templatemo.com/tm-595-3d-coverflow
       </div>
     </section>
 
+    <section id="about" class="about-content">
+      <div class="aboutGY" style="background: rgba(118, 75, 162, 0.1)">
+        <h2 style="margin: 0 0 25px 0">دربارهٔ گمرکیار</h2>
+        <p>
+          گمرکیار هدفش تسهیل فرایندهای گمرکی برای واردکنندگان، صادرکنندگان و
+          ترخیص‌کاران است. با رابط کاربری ساده می‌توانید تعرفه‌ها را محاسبه
+          کرده، مستندات لازم را ببینید و مراحل ترخیص را دنبال کنید.
+        </p>
+
+        <h2 id="why" style="margin: 50px 0 25px 0">چرا گمرکیار؟</h2>
+        <ul class="feature-list">
+          <li>پایگاه اطلاعات به‌روز درباره تعرفه‌ها</li>
+          <li>محاسبهٔ خودکار هزینه‌ها</li>
+          <li>آموزش‌های عملی برای ترخیص</li>
+        </ul>
+
+        <h2 id="cta" style="margin: 50px 0 25px 0">شروع به کار</h2>
+        <p>
+          برای دریافت آخرین نسخه و نصب، به صفحهٔ دانلود مراجعه کنید و اپ را از
+          منبع رسمی دریافت نمایید.
+        </p>
+        <p>
+          <a
+            class="cta-button"
+            style="margin: 50px 0 50px 0; width: 280px; justify-content: center"
+            href="/download.html"
+            >رفتن به صفحه دانلود</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="FAQ-content" style="margin-top: 0px">
+      <div class="FAQ" style="background: rgba(118, 75, 162, 0.1)">
+        <h2 style="margin-bottom: 50px">سؤالات متداول (FAQ)</h2>
+        <h3 style="margin: 25px 0 15px 0">گمرکیار چیست؟</h3>
+        <p style="padding: 0 25px 0 0">
+          گمرکیار یک ابزار موبایل/وب برای کمک به امور گمرکی و ترخیص است.
+        </p>
+        <h3 style="margin: 25px 0 15px 0">آیا گمرکیار رایگان است؟</h3>
+        <p style="padding: 0 25px 0 0">
+          بله، نسخه پایه رایگان است؛ امکانات تکمیلی درون برنامه‌ای ارائه می‌شود.
+        </p>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="section" style="direction: rtl">
       <div class="contact-content">
@@ -359,20 +530,6 @@ https://templatemo.com/tm-595-3d-coverflow
             </p>
 
             <div class="contact-details">
-              <!-- <div class="contact-item">
-                <div class="contact-icon">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-                    />
-                  </svg>
-                </div>
-                <div class="contact-text">
-                  <h4>Email</h4>
-                  <p>hello@3dcoverflow.com</p>
-                </div>
-              </div> -->
-
               <div class="contact-item">
                 <div class="contact-icon">
                   <svg viewBox="0 0 24 24">
@@ -421,27 +578,6 @@ https://templatemo.com/tm-595-3d-coverflow
             <div class="social-links">
               <h4>ما را در شبکه‌های اجتماعی دنبال کنید</h4>
               <div class="social-buttons">
-                <!-- <a href="#" class="social-btn" title="Facebook">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                    />
-                  </svg>
-                </a> -->
-                <!-- <a href="#" class="social-btn" title="Twitter">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                    />
-                  </svg>
-                </a> -->
-                <!-- <a href="#" class="social-btn" title="LinkedIn">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                    />
-                  </svg>
-                </a> -->
                 <a
                   href="https://www.instagram.com/gomrok_yar"
                   class="social-btn"

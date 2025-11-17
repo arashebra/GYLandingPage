@@ -414,7 +414,7 @@ https://templatemo.com/tm-595-3d-coverflow
         }
 
         /* About Section */
-        .about-content {
+        .about-content, .FAQ-content {
             max-width: 1400px;
             margin: 0 auto;
             padding: 40px;
@@ -1198,6 +1198,7 @@ https://templatemo.com/tm-595-3d-coverflow
             }
 
             .about-content,
+            .FAQ-content,
             .contact-content {
                 padding: 20px;
             }
